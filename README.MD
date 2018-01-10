@@ -7,9 +7,47 @@ contact us	:	bardoqi@gmail.com
 
 license:	:	http://open-real-estate.info/en/license
 
-This is a class for calculate the formula. 
+Php Formula Calculate Class is a library for parsing and evaluating mathematical formulas given as strings.
 There is only one member function. And there are less than 40 lines code. So it is very simple. 
 
+
+
+Supports:
+
+* Operators: +, -, *, /, ^
+* Variables: Any letter or word.
+* Numbers with decimal point '.'
+* Functions: all php math finctions,such as sin,sqrt...
+* Unlimited nested parentheses
+
+Installation
+------------
+
+Requires [PHP 5.4 or higher](http://php.net).
+
+To install with [Composer](https://getcomposer.org):
+
+``` sh
+composer require denissimon/formula-parser
+```
+
+
 # Usage
+
+``` php
+
+use Bulo\Library\Std\MathUtil;
+
+$expression = 'x+(sqrt(5)-1)/2';
+$varibles = (['x' => 1]);
+
+try {
+    $ret = MathUtil::parseExpression($expression,$varibles);
+    echo $ret; //2.6180339
+} catch (\Exception $e) {
+    echo $e->getMessage(), "\n";
+}
+```
+
 It is very simple! Please to read the comment.
 
