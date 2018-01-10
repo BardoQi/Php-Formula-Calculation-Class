@@ -28,7 +28,7 @@ Requires [PHP 5.4 or higher](http://php.net).
 To install with [Composer](https://getcomposer.org):
 
 ``` sh
-composer require denissimon/formula-parser
+composer require BaroQi/Php-Formula-Calculate-Class
 ```
 
 
