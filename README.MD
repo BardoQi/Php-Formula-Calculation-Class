@@ -8,8 +8,6 @@ contact us	:	bardoqi@gmail.com
 license:	:	http://open-real-estate.info/en/license
 
 Php Formula Calculate Class is a library for parsing and evaluating mathematical formulas given as strings.
-There is only one member function. And there are less than 40 lines code. So it is very simple. 
-
 
 
 Supports:
@@ -28,7 +26,7 @@ Requires [PHP 5.4 or higher](http://php.net).
 To install with [Composer](https://getcomposer.org):
 
 ``` sh
-composer require denissimon/formula-parser
+composer require BaroQi/Php-Formula-Calculate-Class
 ```
 
 
@@ -51,3 +49,6 @@ try {
 
 It is very simple! Please to read the comment.
 
+# ChangeLog
+Fixed the bug: Only could running in php5. Now it could running in php7, even php7.2 .
+Fixed the bug: Return false when division by zero. Now throw a new Exception.
