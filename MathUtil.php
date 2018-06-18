@@ -81,6 +81,7 @@ class MathUtil
                 $pos += strlen( $value ) + 1;
                 $varArray[$value] = $varibles[$value];
             }else{
+            	throw new Exception( 'Undefined varible ' .$value. '.');
                 return false;
             }
         }

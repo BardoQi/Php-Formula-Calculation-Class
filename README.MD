@@ -50,5 +50,7 @@ try {
 It is very simple! Please to read the comment.
 
 # ChangeLog
-Fixed the bug: Only could running in php5. Now it could running in php7, even php7.2 .
+Fixed the bug: Only could running in php5. Now it could running in php7.
+Enhance support for php7.2 .
+
 Fixed the bug: Return false when division by zero. Now throw a new Exception.
